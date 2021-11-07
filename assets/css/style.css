@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:  url(../img/bg-01.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+.bg{
+    background: rgb(163,3,207);
+    background: linear-gradient(90deg, rgba(163,3,207,1) 0%, rgba(0,212,255,1) 100%);
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    opacity: .5;
+}
+
+/* =========================== SIGN IN =======================*/
+.container_signIn, .container_singUp{
+    z-index: 10;
+    width: 25rem;
+    height: 38rem;
+    display: flex;
+    justify-content: center;
+    background-color: #ffff;
+    border-radius: 1.25rem;
+    transition: all 1s;
+}
+.content{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.sign_title, .login_title, .login_up_title, .loginUp_sub{
+    color: #4b2354;
+}
+.login_create{
+    text-align: center;
+}
+.login_up{
+    color: #4b2354;
+    font-size: 1rem;
+}
+.login_up:hover{
+    text-decoration: underline;
+}
+.login_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.container_signIn .login_form input{
+    width: 20rem;
+    font-size: 1rem;
+    color: #4b2354;
+    height: 3.7rem;
+    padding: 0 20px 0 23px;
+    margin-bottom: 2rem;
+    outline: none;
+    border: none;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+}
+.login_form button, .sign_form button{
+    color: #ffff;
+    background-color: #bd59d4;
+    border: none;
+    width: 10rem;
+    height: 3.125rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.login_form button:hover{
+    opacity: .5;
+}
+.login_subtitle{
+    font-weight: 300;
+    font-size: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 1.25rem;
+    color: #999;
+}
+.login_connectionSocial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 3.438rem;
+}
+.social{
+    display: flex;
+}
+.facebook, .google{
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    width: 3.125rem;
+    height: 3.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.facebook{
+    margin-right: 1rem;   
+}
+.facebook i{
+    color: midnightblue;
+}
+/* =========================== SIGN UP =======================*/
+.container_singUp{
+    display: none;
+}
+.login_title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.back{
+    color: #4b2354;
+    cursor: pointer;
+    height: fit-content;
+}
+.login_up_title{
+    margin: 0;
+}
+.sign_form{
+    position: relative;
+    bottom: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sign_form input{
+    width: 22.2rem;
+    font-size: 1rem;
+    color: #4b2354;
+    height: 3.7rem;
+    padding: 0 20px 0 23px;
+    margin-bottom: 2rem;
+    outline: none;
+    border: none;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+}
+.form_name{
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+}
+#name, #lastname{
+    width: 10.9rem;
+}
