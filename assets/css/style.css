@@ -176,13 +176,13 @@ body{
 /* ===================== MEDIA =================*/
 @media (max-width: 420px){
     .container_signIn, .container_singUp{
-        width: 20rem;
+        width: 22rem;
     }
     .container_signIn .login_form input, .sign_form input{
-        width: 18rem;
+        width: 20rem;
     }
     #name, #lastname{
-        width: 8.7rem;
+        width: 9.5rem;
     }
 }
 @media (max-width: 350px){
