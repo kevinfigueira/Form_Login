@@ -173,3 +173,26 @@ body{
 #name, #lastname{
     width: 10.9rem;
 }
+/* ===================== MEDIA =================*/
+@media (max-width: 420px){
+    .container_signIn, .container_singUp{
+        width: 20rem;
+    }
+    .container_signIn .login_form input, .sign_form input{
+        width: 18rem;
+    }
+    #name, #lastname{
+        width: 8.7rem;
+    }
+}
+@media (max-width: 350px){
+    .container_signIn, .container_singUp{
+        width: 18rem;
+    }
+    .container_signIn .login_form input, .sign_form input{
+        width: 16rem;
+    }
+    #name, #lastname{
+        width: 8rem;
+    }
+}
